@@ -1,8 +1,6 @@
-import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { questions } from "../constants";
 import { rounds } from "../constants";
-import { useEffect } from "react";
 import useQuizStore from "../store/quizStore";
 
 const Round = () => {

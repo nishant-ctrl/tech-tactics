@@ -5,8 +5,6 @@ const useQuizStore = create(
     persist(
         (set) => ({
             answeredQuestions: {},
-
-            // mark question as answered
             markAnswered: (round, qNo) =>
                 set((state) => ({
                     answeredQuestions: {
@@ -16,7 +14,7 @@ const useQuizStore = create(
                 })),
         }),
         {
-            name: "quiz-answered-storage", // localStorage key
+            name: "quiz-answered-storage",
         }
     )
 );

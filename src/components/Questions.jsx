@@ -54,7 +54,6 @@ function QuestionScreen() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#0f051d] to-[#1a0642] text-white px-4 py-8 relative">
             <div className="flex flex-col md:flex-row items-center justify-between w-full px-6 md:px-16 mt-4 gap-6">
-                {/* Question Card - Left */}
                 <div className="w-44 h-56 rounded-2xl shadow-md flex flex-col items-center justify-center transition-transform duration-300">
                     <div className="bg-gradient-to-br from-cyan-400 to-blue-500 w-20 h-20 rounded-full flex items-center justify-center text-xl font-bold text-white mb-3">
                         Q{questionObj.id}
@@ -64,7 +63,6 @@ function QuestionScreen() {
                     </div>
                 </div>
 
-                {/* Timer - Right */}
                 <div className="w-30 h-30 border-[8px] border-cyan-400 rounded-full flex items-center justify-center shadow-lg bg-[#121224]">
                     <span className="text-white text-[48px] font-extrabold leading-none">
                         {timeLeft}
@@ -73,12 +71,10 @@ function QuestionScreen() {
                 </div>
             </div>
 
-            {/* Question */}
             <h1 className="text-2xl md:text-3xl font-semibold text-center mt-auto mb-10 max-w-6xl">
                 {questionObj.question}
             </h1>
 
-            {/* Options */}
             <div className="grid grid-cols-1  gap-4 w-full max-w-2xl mb-8">
                 {questionObj.options.map((option, idx) => {
                     const isCorrect = idx === questionObj.answer;
@@ -127,9 +123,18 @@ function QuestionScreen() {
                 })}
             </div>
 
-            {showCorrect && (
+            {/* {showCorrect && (
                 <div className="mt-4 text-lg text-green-400">
-                    ✅ Correct Answer:{" "}
+                    Correct Answer:{" "}
+                    <span className="font-semibold">
+                        {optionLabels[questionObj.answer]}.{" "}
+                        {questionObj.options[questionObj.answer]}
+                    </span>
+                </div>
+            )} */}
+            {isAnswered && (
+                <div className="mt-4 text-lg text-green-400">
+                    Correct Answer:{" "}
                     <span className="font-semibold">
                         {optionLabels[questionObj.answer]}.{" "}
                         {questionObj.options[questionObj.answer]}
@@ -137,7 +142,6 @@ function QuestionScreen() {
                 </div>
             )}
 
-            {/* Navigation Buttons */}
             <div className="flex gap-4 mt-4">
                 <button
                     onClick={exit}
@@ -154,7 +158,7 @@ function QuestionScreen() {
                             : "bg-gray-600 cursor-not-allowed"
                     }`}
                 >
-                    ➝ Check Answer
+                    Check Answer
                 </button>
             </div>
         </div>

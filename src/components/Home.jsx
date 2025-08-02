@@ -8,17 +8,17 @@ const TechQuizHome = () => {
     const navigate=useNavigate()
     return (
         <div className="min-h-screen bg-gradient-to-br from-[#0f051d] to-[#19053a] text-white px-6 py-10 font-sans">
-            {/* Header */}
+
             <div className="flex justify-between items-center mb-12">
                 <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-pink-500 text-transparent bg-clip-text flex items-center gap-2">
                     <img src={logo} alt="Logo" className="w-30 h-24 mt-4" />
-                    <div className="h-24 flex items-center">
+                    <div className="h-24 flex items-center text-6xl">
                         Anuvrat 
                     </div>
                 </div>
                 <div className="flex items-center gap-2 text-cyan-400 cursor-pointer hover:text-cyan-300">
                     <FaTrophy />
-                    <span className="text-sm font-medium">
+                    <span className="text-lg font-medium">
                         Competitive Tech Challenge
                     </span>
                 </div>
@@ -43,7 +43,7 @@ const TechQuizHome = () => {
                 </p>
             </div>
 
-            {/* Rounds */}
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 max-w-6xl mx-auto">
                 {rounds.map((round, index) => (
                     <div
