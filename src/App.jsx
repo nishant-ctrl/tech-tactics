@@ -1,4 +1,3 @@
-
 import TechQuizHome from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import Round from "./components/Round";
