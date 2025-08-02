@@ -1,34 +1,9 @@
 import { FaTrophy } from "react-icons/fa";
-import logo from "../../public/logo.png"
+import logo from "../assets/logo.png"
 import StatsSection from "./StatsSection";
 import { useNavigate } from "react-router-dom";
+import { rounds } from "../constants";
 
-const rounds = [
-    {
-        id: "1",
-        number: "01",
-        title: "ROUND 1",
-        description: "Fundamentals & Basics",
-        borderColor: "border-blue-500",
-        gradient: "from-blue-500 to-purple-500",
-    },
-    {
-        id: "2",
-        number: "02",
-        title: "ROUND 2",
-        description: "Intermediate Concepts",
-        borderColor: "border-pink-500",
-        gradient: "from-pink-500 to-purple-500",
-    },
-    {
-        id: "3",
-        number: "03",
-        title: "ROUND 3",
-        description: "Advanced & Expert",
-        borderColor: "border-cyan-400",
-        gradient: "from-cyan-400 to-blue-400",
-    },
-];
 const TechQuizHome = () => {
     const navigate=useNavigate()
     return (
@@ -36,9 +11,9 @@ const TechQuizHome = () => {
             {/* Header */}
             <div className="flex justify-between items-center mb-12">
                 <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-pink-500 text-transparent bg-clip-text flex items-center gap-2">
-                    <img src={logo} alt="Logo" className="w-30 h-24" />
+                    <img src={logo} alt="Logo" className="w-30 h-24 mt-4" />
                     <div className="h-24 flex items-center">
-                        Anuvrat <span className="font-light">Tech Quiz</span>
+                        Anuvrat 
                     </div>
                 </div>
                 <div className="flex items-center gap-2 text-cyan-400 cursor-pointer hover:text-cyan-300">
