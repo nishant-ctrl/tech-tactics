@@ -111,6 +111,61 @@ const rounds = [
         borderColor: "border-cyan-400",
         gradient: "from-cyan-400 to-blue-400",
     },
+    {
+        id: "4",
+        number: "01",
+        title: "ROUND 1",
+        description: "Code Basics",
+        borderColor: "border-blue-500",
+        gradient: "from-blue-500 to-purple-500",
+    },
+    {
+        id: "5",
+        number: "02",
+        title: "ROUND 2",
+        description: "Intermediate CODES",
+        borderColor: "border-cyan-400",
+        gradient: "from-cyan-400 to-blue-400",
+    },
 ];
 
-export { questions,rounds };
+
+
+const codeQuestions = {
+    4: [
+        {
+            id: 1,
+            question: `// Finds the index of the first 'x'. Returns -1 if not found.
+int find_char(char* str) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == 'x') {
+            return i;
+        }
+    }
+    // Bug: No return statement if the loop finishes
+}`,
+        },
+        {
+            id: 2,
+            question:
+                "What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?",
+        },
+        {
+            id: 3,
+            question:
+                "What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?",
+        },
+
+        // Add 9 more
+    ],
+    5: [
+        {
+            id: 1,
+            question:
+                "What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?What is 2 + 2?",
+        },
+        // Add 9 more
+    ],
+};
+
+export { questions,rounds,codeQuestions };

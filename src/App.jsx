@@ -1,7 +1,9 @@
 import TechQuizHome from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import Round from "./components/Round";
+import CodeRound from "./components/CodeRound";
 import Questions from "./components/Questions";
+import CodeQuestions from "./components/CodeQuestions";
 
 
 function App() {
@@ -13,6 +15,11 @@ function App() {
                 <Route
                     path="/round/:roundNo/question/:questionNo"
                     element={<Questions />}
+                />
+                <Route path="/code-round/:roundNo/" element={<CodeRound />} />
+                <Route
+                    path="/code-round/:roundNo/question/:questionNo"
+                    element={<CodeQuestions />}
                 />
             </Routes>
         </div>
