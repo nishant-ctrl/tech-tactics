@@ -39,7 +39,7 @@ const Round = () => {
 
             <div className="flex justify-center flex-wrap gap-6">
                 {questions[roundNo].map((question,i) => {
-                    if(i<3){
+                    
                         const isAnswered =
                             answeredQuestions[`${roundNo}-${question.id}`];
                         return (
@@ -63,7 +63,7 @@ const Round = () => {
                                 </div>
                             </div>
                         );
-                    }
+                    
                 })}
             </div>
         </div>
