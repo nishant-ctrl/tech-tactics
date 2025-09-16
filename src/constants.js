@@ -1,15 +1,340 @@
+// const questions = {
+//     1: [
+//         {
+//             id: 1,
+//             question: "What is the function of a diode in a circuit?",
+//             options: [
+//                 "To increase current",
+//                 "To store charge",
+//                 "To allow current in one direction only",
+//                 "To amplify signals",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 2,
+//             question:
+//                 "What happens to the depletion region of a PN junction diode when it is forward biased?",
+//             options: [
+//                 "It becomes wider",
+//                 "It breaks down",
+//                 "It narrows",
+//                 "It remains unchanged",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 3,
+//             question:
+//                 "In a Zener diode, what happens when the reverse voltage exceeds the breakdown voltage?",
+//             options: [
+//                 "It conducts in reverse direction",
+//                 "It gets damaged",
+//                 "It becomes forward biased",
+//                 "It stops conducting",
+//             ],
+//             answer: 0,
+//         },
+//         {
+//             id: 4,
+//             question: "Which of the following is true for an ideal Op-Amp?",
+//             options: [
+//                 "Infinite gain, zero input impedance",
+//                 "Zero gain, infinite input impedance",
+//                 "Infinite gain, infinite input impedance",
+//                 "Unity gain, zero output impedance",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 5,
+//             question:
+//                 "Which terminal is used to provide positive feedback in an Op-Amp circuit?",
+//             options: ["Inverting (-)", "Non-inverting (+)", "Output", "Ground"],
+//             answer: 1,
+//         },
+//         {
+//             id: 6,
+//             question:
+//                 "In a purely inductive AC circuit, the average power consumed is:",
+//             options: ["V × I", "V × I × cos(ϕ)", "Zero", "V^2 / R"],
+//             answer: 2,
+//         },
+//         {
+//             id: 7,
+//             question:
+//                 "Which Indian satellite mission discovered water on the Moon?",
+//             options: ["Mangalyaan", "INSAT", "Chandrayaan-1", "PSLV-C37"],
+//             answer: 2,
+//         },
+//         {
+//             id: 8,
+//             question:
+//                 "Which of the following is NOT a characteristic of a linked list?",
+//             options: [
+//                 "Dynamic size",
+//                 "Efficient random access",
+//                 "Efficient insertions/deletions",
+//                 "Uses pointers",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 9,
+//             question: "Who is considered the father of electronics?",
+//             options: [
+//                 "Nikola Tesla",
+//                 "Thomas Edison",
+//                 "Lee De Forest",
+//                 "James Clerk Maxwell",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 10,
+//             question:
+//                 "Which technology is widely used in recent smartphones for fast wireless charging?",
+//             options: [
+//                 "Infrared charging",
+//                 "Magnetic resonance charging",
+//                 "Solar charging",
+//                 "USB charging",
+//             ],
+//             answer: 1,
+//         },
+//     ],
+
+//     2: [
+//         {
+//             id: 1,
+//             question:
+//                 "Which configuration of a transistor offers the highest voltage gain?",
+//             options: [
+//                 "Common Base",
+//                 "Common Emitter",
+//                 "Common Collector",
+//                 "Emitter Follower",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 2,
+//             question:
+//                 "Which of the following conditions must be met for a BJT to operate in the saturation region?",
+//             options: [
+//                 "VBE > 0 and VCE > 0",
+//                 "VBE < 0 and VCE < 0",
+//                 "VBE > 0 and VCE ≈ 0",
+//                 "VBE = VCE",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 3,
+//             question: "When a BJT is operated in inverse active region:",
+//             options: [
+//                 "Base-collector junction is forward biased, and base-emitter is reverse biased",
+//                 "Both junctions are reverse biased",
+//                 "Both junctions are forward biased",
+//                 "It operates like a diode",
+//             ],
+//             answer: 0,
+//         },
+//         {
+//             id: 4,
+//             question:
+//                 "In an n-channel enhancement-mode MOSFET, the device turns on when:",
+//             options: [
+//                 "VGS is zero",
+//                 "VGS is less than Vth",
+//                 "VGS is greater than Vth",
+//                 "VDS is zero",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 5,
+//             question: "In saturation region, the MOSFET behaves like:",
+//             options: [
+//                 "A variable resistor",
+//                 "A constant current source",
+//                 "A diode",
+//                 "A voltage source",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 6,
+//             question:
+//                 "Which country launched the world’s first 6G satellite in space (2020)?",
+//             options: ["USA", "China", "Japan", "South Korea"],
+//             answer: 1,
+//         },
+//         {
+//             id: 7,
+//             question:
+//                 "Which Indian startup launched the country’s first reusable rocket prototype?",
+//             options: [
+//                 "Agnikul Cosmos",
+//                 "Skyroot Aerospace",
+//                 "ISRO",
+//                 "Bellatrix Aerospace",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 8,
+//             question:
+//                 "Which sensor is used in smartphones for orientation detection?",
+//             options: [
+//                 "Proximity sensor",
+//                 "Gyroscope",
+//                 "Motion sensor",
+//                 "Infrared sensor",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 9,
+//             question:
+//                 "What breakthrough did India’s Chandrayaan-3 achieve in 2023?",
+//             options: [
+//                 "First Moon orbit",
+//                 "First Indian rover on Moon",
+//                 "First Mars entry",
+//                 "Deep space imaging",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 10,
+//             question: "The current gain (β) of a BJT is defined as ",
+//             options: ["IC / IB", "IC / IE", "IB / IC", "VCE / VBE"],
+//             answer: 0,
+//         },
+//     ],
+
+//     3: [
+//         {
+//             id: 1,
+//             question:
+//                 "A MOSFET operates in saturation. If VDS is increased further, the drain current ID:",
+//             options: [
+//                 "Increases linearly",
+//                 "Remains constant ideally but increases slightly due to channel length modulation",
+//                 "Decreases due to reverse bias",
+//                 "Saturates and drops to zero",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 2,
+//             question:
+//                 "In saturation region, the drain current (ID) of an nMOS is approximately given by:",
+//             options: [
+//                 "ID = μCox (W/L) (VGS - Vth)² VDS",
+//                 "ID = μCox (W/L) (VGS - Vth)² / 2",
+//                 "ID = β (VGS + Vth)²",
+//                 "ID = (VDS - VGS)²",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 3,
+//             question:
+//                 "In CMOS technology, the combination of pMOS and nMOS is used to:",
+//             options: [
+//                 "Increase voltage",
+//                 "Save power",
+//                 "Amplify current",
+//                 "Increase gain",
+//             ],
+//             answer: 1,
+//         },
+//         {
+//             id: 4,
+//             question: "A PN junction diode exhibits avalanche breakdown when:",
+//             options: [
+//                 "Depletion width becomes zero",
+//                 "Thermally generated carriers increase",
+//                 "Impact ionization occurs at high reverse voltages",
+//                 "Zener effect dominates",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 5,
+//             question:
+//                 "What is the function of the armature reaction in a DC machine?",
+//             options: [
+//                 "To increase the flux in the main pole",
+//                 "To weaken the flux and cause distortion",
+//                 "To increase the speed",
+//                 "To control voltage",
+//             ],
+//             answer: 1,
+//         },
+
+//         {
+//             id: 6,
+//             question:
+//                 "Which country launched the first 3D-printed rocket into space (2023)?",
+//             options: ["China", "USA", "Japan", "Russia"],
+//             answer: 1,
+//         },
+//         {
+//             id: 7,
+//             question:
+//                 "In a MOSFET, channel-length modulation is responsible for?",
+//             options: [
+//                 "Reducing threshold voltage",
+//                 "Increasing drain current slightly in saturation region",
+//                 "Decreasing gate capacitance",
+//                 "Causing the device to enter triode region",
+//             ],
+//             answer: 2,
+//         },
+//         {
+//             id: 8,
+//             question:
+//                 "In 2023, which company became the world’s first to hit a $3 trillion market capitalization?",
+//             options: ["Microsoft", "Apple", "Amazon", "Alphabet"],
+//             answer: 1,
+//         },
+//         {
+//             id: 9,
+//             question:
+//                 "The Artemis II mission by NASA is planned to send astronauts around the Moon. Which year is it scheduled for?",
+//             options: ["2023", "2024", "2025", "2026"],
+//             answer: 2,
+//         },
+//         {
+//             id: 10,
+//             question: "The Early effect in a BJT refers to ",
+//             options: [
+//                 "Reduction in base width due to increase in collector-base voltage",
+//                 "Increase in base current at high frequencies",
+//                 "Delay in switching due to junction capacitance",
+//                 "Thermal runaway at high temperature",
+//             ],
+//             answer: 0,
+//         },
+//     ],
+// };
+
 const questions = {
     1: [
         {
             id: 1,
-            question: "What is the function of a diode in a circuit?",
+            question:
+                "Which part of a diode is doped with acceptor impurities?",
             options: [
-                "To increase current",
-                "To store charge",
-                "To allow current in one direction only",
-                "To amplify signals",
+                "Anode (P-side)",
+                "Cathode (N-side)",
+                "Both sides equally",
+                "Neither side",
             ],
-            answer: 2,
+            answer: 0,
         },
         {
             id: 2,
@@ -37,6 +362,18 @@ const questions = {
         },
         {
             id: 4,
+            question:
+                "If you connect a voltmeter in series with a resistor, what will it likely read?",
+            options: [
+                "Correct voltage across resistor",
+                "A very small voltage",
+                "The total source voltage",
+                "An extremely high voltage",
+            ],
+            answer: 2,
+        },
+        {
+            id: 5,
             question: "Which of the following is true for an ideal Op-Amp?",
             options: [
                 "Infinite gain, zero input impedance",
@@ -45,13 +382,6 @@ const questions = {
                 "Unity gain, zero output impedance",
             ],
             answer: 2,
-        },
-        {
-            id: 5,
-            question:
-                "Which terminal is used to provide positive feedback in an Op-Amp circuit?",
-            options: ["Inverting (-)", "Non-inverting (+)", "Output", "Ground"],
-            answer: 1,
         },
         {
             id: 6,
@@ -63,12 +393,24 @@ const questions = {
         {
             id: 7,
             question:
+                "A capacitor charged and then connected across a resistor will release its stored energy as:",
+            options: [
+                "Amplified signal",
+                "Stored indefinitely",
+                "Heat in resistor",
+                "Oscillations",
+            ],
+            answer: 2,
+        },
+        {
+            id: 8,
+            question:
                 "Which Indian satellite mission discovered water on the Moon?",
             options: ["Mangalyaan", "INSAT", "Chandrayaan-1", "PSLV-C37"],
             answer: 2,
         },
         {
-            id: 8,
+            id: 9,
             question:
                 "Which of the following is NOT a characteristic of a linked list?",
             options: [
@@ -80,7 +422,7 @@ const questions = {
             answer: 1,
         },
         {
-            id: 9,
+            id: 10,
             question: "Who is considered the father of electronics?",
             options: [
                 "Nikola Tesla",
@@ -89,18 +431,6 @@ const questions = {
                 "James Clerk Maxwell",
             ],
             answer: 2,
-        },
-        {
-            id: 10,
-            question:
-                "Which technology is widely used in recent smartphones for fast wireless charging?",
-            options: [
-                "Infrared charging",
-                "Magnetic resonance charging",
-                "Solar charging",
-                "USB charging",
-            ],
-            answer: 1,
         },
     ],
 
@@ -120,72 +450,56 @@ const questions = {
         {
             id: 2,
             question:
-                "Which of the following conditions must be met for a BJT to operate in the saturation region?",
+                "If a base current in a BJT is doubled (active region), the collector current:",
             options: [
-                "VBE > 0 and VCE > 0",
-                "VBE < 0 and VCE < 0",
-                "VBE > 0 and VCE ≈ 0",
-                "VBE = VCE",
+                "Remains the same",
+                "Doubles",
+                "Is halved",
+                "Increases but not necessarily double",
             ],
-            answer: 2,
+            answer: 1,
         },
         {
             id: 3,
             question: "When a BJT is operated in inverse active region:",
             options: [
-                "Base-collector junction is forward biased, and base-emitter is reverse biased",
-                "Both junctions are reverse biased",
-                "Both junctions are forward biased",
-                "It operates like a diode",
+                "Base-collector forward, base-emitter reverse",
+                "Both reverse biased",
+                "Both forward biased",
+                "Acts like a diode",
             ],
             answer: 0,
         },
         {
             id: 4,
             question:
-                "In an n-channel enhancement-mode MOSFET, the device turns on when:",
-            options: [
-                "VGS is zero",
-                "VGS is less than Vth",
-                "VGS is greater than Vth",
-                "VDS is zero",
-            ],
+                "In an n-channel enhancement MOSFET, the device turns on when:",
+            options: ["VGS = 0", "VGS < Vth", "VGS > Vth", "VDS = 0"],
             answer: 2,
         },
         {
             id: 5,
-            question: "In saturation region, the MOSFET behaves like:",
+            question:
+                "In a common-emitter amplifier, removing bypass capacitor across emitter resistor causes:",
             options: [
-                "A variable resistor",
-                "A constant current source",
-                "A diode",
-                "A voltage source",
+                "Gain increases",
+                "Gain decreases",
+                "No effect",
+                "Stops working",
             ],
             answer: 1,
         },
         {
             id: 6,
             question:
-                "Which country launched the world’s first 6G satellite in space (2020)?",
-            options: ["USA", "China", "Japan", "South Korea"],
+                "Propagation delay of each gate in a 16-bit ripple carry adder is 20ns. Maximum delay?",
+            options: ["160 ns", "200 ns", "240 ns", "320 ns"],
             answer: 1,
         },
         {
             id: 7,
             question:
-                "Which Indian startup launched the country’s first reusable rocket prototype?",
-            options: [
-                "Agnikul Cosmos",
-                "Skyroot Aerospace",
-                "ISRO",
-                "Bellatrix Aerospace",
-            ],
-            answer: 1,
-        },
-        {
-            id: 8,
-            question:
-                "Which sensor is used in smartphones for orientation detection?",
+                "Which sensor in smartphones is used for orientation detection?",
             options: [
                 "Proximity sensor",
                 "Gyroscope",
@@ -195,7 +509,7 @@ const questions = {
             answer: 1,
         },
         {
-            id: 9,
+            id: 8,
             question:
                 "What breakthrough did India’s Chandrayaan-3 achieve in 2023?",
             options: [
@@ -207,8 +521,20 @@ const questions = {
             answer: 1,
         },
         {
+            id: 9,
+            question:
+                "Which of the following conditions must be met for a BJT to operate in saturation region?",
+            options: [
+                "VBE > 0 and VCE > 0",
+                "VBE < 0 and VCE < 0",
+                "VBE > 0 and VCE ≈ 0",
+                "VBE = VCE",
+            ],
+            answer: 2,
+        },
+        {
             id: 10,
-            question: "The current gain (β) of a BJT is defined as ",
+            question: "The current gain (β) of a BJT is defined as:",
             options: ["IC / IB", "IC / IE", "IB / IC", "VCE / VBE"],
             answer: 0,
         },
@@ -218,31 +544,30 @@ const questions = {
         {
             id: 1,
             question:
-                "A MOSFET operates in saturation. If VDS is increased further, the drain current ID:",
+                "A MOSFET in saturation with increasing VDS will have ID that:",
             options: [
                 "Increases linearly",
-                "Remains constant ideally but increases slightly due to channel length modulation",
-                "Decreases due to reverse bias",
-                "Saturates and drops to zero",
+                "Remains constant ideally, slight increase due to channel length modulation",
+                "Decreases",
+                "Drops to zero",
             ],
             answer: 1,
         },
         {
             id: 2,
             question:
-                "In saturation region, the drain current (ID) of an nMOS is approximately given by:",
+                "Drain current ID of an nMOS in saturation is approximately:",
             options: [
-                "ID = μCox (W/L) (VGS - Vth)² VDS",
-                "ID = μCox (W/L) (VGS - Vth)² / 2",
-                "ID = β (VGS + Vth)²",
-                "ID = (VDS - VGS)²",
+                "μCox (W/L)(VGS - Vth)² VDS",
+                "μCox (W/L)(VGS - Vth)² / 2",
+                "β (VGS + Vth)²",
+                "(VDS - VGS)²",
             ],
             answer: 1,
         },
         {
             id: 3,
-            question:
-                "In CMOS technology, the combination of pMOS and nMOS is used to:",
+            question: "In CMOS technology, combining pMOS and nMOS helps to:",
             options: [
                 "Increase voltage",
                 "Save power",
@@ -253,74 +578,73 @@ const questions = {
         },
         {
             id: 4,
-            question: "A PN junction diode exhibits avalanche breakdown when:",
+            question: "Avalanche breakdown in PN diode occurs when:",
             options: [
-                "Depletion width becomes zero",
-                "Thermally generated carriers increase",
-                "Impact ionization occurs at high reverse voltages",
+                "Depletion width = 0",
+                "Thermal carriers increase",
+                "Impact ionization at high reverse voltage",
                 "Zener effect dominates",
             ],
             answer: 2,
         },
         {
             id: 5,
-            question:
-                "What is the function of the armature reaction in a DC machine?",
+            question: "Early effect in BJT refers to:",
             options: [
-                "To increase the flux in the main pole",
-                "To weaken the flux and cause distortion",
-                "To increase the speed",
-                "To control voltage",
+                "Reduction in base width due to increased collector-base voltage",
+                "Increase in base current at high frequencies",
+                "Switching delay",
+                "Thermal runaway",
             ],
-            answer: 1,
+            answer: 0,
         },
-
         {
             id: 6,
             question:
-                "Which country launched the first 3D-printed rocket into space (2023)?",
-            options: ["China", "USA", "Japan", "Russia"],
+                "Which Indian startup launched the first reusable rocket prototype?",
+            options: [
+                "Agnikul Cosmos",
+                "Skyroot Aerospace",
+                "ISRO",
+                "Bellatrix Aerospace",
+            ],
             answer: 1,
         },
         {
             id: 7,
             question:
-                "In a MOSFET, channel-length modulation is responsible for?",
-            options: [
-                "Reducing threshold voltage",
-                "Increasing drain current slightly in saturation region",
-                "Decreasing gate capacitance",
-                "Causing the device to enter triode region",
-            ],
+                "NASA’s Artemis II mission plans to send astronauts around the Moon in which year?",
+            options: ["2023", "2024", "2025", "2026"],
             answer: 2,
         },
         {
             id: 8,
             question:
-                "In 2023, which company became the world’s first to hit a $3 trillion market capitalization?",
-            options: ["Microsoft", "Apple", "Amazon", "Alphabet"],
-            answer: 1,
+                "If collector resistance RC is increased in CE amplifier (bias fixed), voltage gain:",
+            options: ["Increases", "Decreases", "Constant", "Zero"],
+            answer: 0,
         },
         {
             id: 9,
-            question:
-                "The Artemis II mission by NASA is planned to send astronauts around the Moon. Which year is it scheduled for?",
-            options: ["2023", "2024", "2025", "2026"],
-            answer: 2,
+            question: "In the saturation region, a MOSFET behaves like:",
+            options: [
+                "Variable resistor",
+                "Constant current source",
+                "Diode",
+                "Voltage source",
+            ],
+            answer: 1,
         },
         {
             id: 10,
-            question: "The Early effect in a BJT refers to ",
-            options: [
-                "Reduction in base width due to increase in collector-base voltage",
-                "Increase in base current at high frequencies",
-                "Delay in switching due to junction capacitance",
-                "Thermal runaway at high temperature",
-            ],
-            answer: 0,
+            question:
+                "Which company became first to hit $3 trillion market capitalization (2023)?",
+            options: ["Microsoft", "Apple", "Amazon", "Alphabet"],
+            answer: 1,
         },
     ],
 };
+
 
 const rounds = [
     {
