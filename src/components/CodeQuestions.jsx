@@ -13,7 +13,7 @@ function QuestionScreen() {
     const isAnswered = answeredQuestions[questionKey];
 
     const questionObj = codeQuestions[roundNo]?.[parseInt(questionNo) - 1];
-    const [timeLeft, setTimeLeft] = useState(300);
+    const [timeLeft, setTimeLeft] = useState(120);
     const [showCorrect, setShowCorrect] = useState(false);
 
     useEffect(() => {

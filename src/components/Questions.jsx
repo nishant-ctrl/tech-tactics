@@ -16,7 +16,7 @@ function QuestionScreen() {
     const questionObj = questions[roundNo]?.[parseInt(questionNo) - 1];
 
     const [selected, setSelected] = useState(null);
-    const [timeLeft, setTimeLeft] = useState(30);
+    const [timeLeft, setTimeLeft] = useState(60);
     const [showCorrect, setShowCorrect] = useState(false);
 
     useEffect(() => {
